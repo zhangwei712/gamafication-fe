@@ -1,0 +1,47 @@
+.header {
+  align-items: center;
+  background: #fff !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.logo {
+  background: rgba(255 255 255 / 20%);
+  color: #fff;
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+  margin: 16px;
+  text-align: center;
+
+   img {
+    width: auto;
+    height: 30px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.header-right {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.collapsed-btn {
+  font-size: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.content-wrap {
+  height: 100%;
+}
