@@ -1,10 +1,9 @@
-import { defineConfig, loadEnv } from 'vite';
-
 import react from '@vitejs/plugin-react';
+import { defineConfig, loadEnv } from 'vite';
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, process.cwd() + '/env') };
+  process.env = Object.assign(process.env, loadEnv(mode, process.cwd() + '/env'));
   return defineConfig({
     plugins: [react()],
     css: {
@@ -14,6 +13,8 @@ export default ({ mode }) => {
       },
     },
     server: {
+      port: 8080,
+      open: true,
       proxy: {
         '/api': {
           target: process.env.VITE_API_HOST,
