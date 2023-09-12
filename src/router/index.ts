@@ -1,3 +1,3 @@
-export * from './authGuard';
-export * from './rootRute';
+export * from './AuthGuard';
+export * from './RootRute';
 export * from './routeConfig';

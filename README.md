@@ -4,7 +4,7 @@
 
 # 本地开发环境依赖版本
 - node "^16.0.0 || >=18.0.0"
-- yarn  v1.22.17
+- yarn  ^v1.22.17
 
 
 # 核心库
@@ -14,19 +14,23 @@
 # 项目规范
 ## 目录结构
 - src/api api接口 
-- - src/api/mutation mutation接口
-- - src/api/query query接口
-- src/ app app入口
+  - src/api/mutation mutation接口
+  - src/api/query query接口
+  - src/api/fragment 公用fragment
+- src/app app入口
 - src/assets 静态资源
-- src/component 组件库
+- src/components 组件库
 - src/context context
-- src/page 页面
+- src/pages 页面
 - src/router 路由相关
 - env 环境变量
 ## 命名规范
-- 变量名/目录名 小驼峰 eg: myPhoto
+- 变量名 小驼峰 eg: myPhoto 
+- 常量命名：全部大写，短下划线分隔 eg PHOTO_TABS
+- components UI/功能组件，名称首字母大写，驼峰式命名。eg PhotoDetail 
+- pages 页面组件，名称首字母大写，驼峰式命名。eg PhotoDetail
 - 样式命名规范 css文件蛇形 在ts/jsx 可以用驼峰 会自动转
-- 请求规范 query 文件名后缀Query  mutation 文件名后缀是Mutation
+- 请求规范 query 文件名后缀Query  mutation 文件名后缀是Mutation fragment文件后缀是Fragment
 ## git 提交规范
 - git commit 会进行 eslint,stylelint  和 prettier文件格式化 校验，请根据结果修改
 ## 分支管理规范
@@ -38,10 +42,11 @@
 - 推荐使用rebase 而不是 merge 去同步origin 分支
 ## tag管理
 - 请遵循 语义化版本 https://semver.org/lang/zh-CN/
-- 版本格式：主版本号.次版本号.修订号，版本号递增规则如下：
-  主版本号：当你做了不兼容的 API 修改，
-  次版本号：当你做了向下兼容的功能性新增，
-  修订号：当你做了向下兼容的问题修正。
+- 版本格式：主版本号.次版本号.修订号
+- 版本号递增规则如下：
+  - 主版本号：当你做了不兼容的 API 修改，
+  - 次版本号：当你做了向下兼容的功能性新增，
+  - 修订号：当你做了向下兼容的问题修正。
 
 # 部署
 todo

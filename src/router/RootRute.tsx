@@ -1,9 +1,9 @@
 import { Navigate } from 'react-router-dom';
 
-import DashboardLayout from '../component/layout';
-import Home from '../page/home';
+import DashboardLayout from '../components/Layout';
+import Home from '../pages/Home';
 
-import AuthGuard from './authGuard';
+import AuthGuard from './AuthGuard';
 
 const RootRoute = [
   {
@@ -15,7 +15,7 @@ const RootRoute = [
     ),
     children: [
       {
-        path: 'home',
+        path: 'Home',
         element: (
           <AuthGuard>
             <Home />

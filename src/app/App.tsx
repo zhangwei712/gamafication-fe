@@ -6,7 +6,7 @@ import { ConfigProvider } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 
 import client from '../api/graphqlClient';
-import RootRoute from '../router/rootRute';
+import RootRoute from '../router/RootRute';
 
 import './App.css';
 

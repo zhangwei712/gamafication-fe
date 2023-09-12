@@ -587,7 +587,7 @@ enum GalleryPrivacy {
 }
 
 enum GalleryReportStatus{
-    """user not login or other reason"""
+    """user not Login or other reason"""
     UNAUTHORIZED
     """can't report, may be the gallery belong to himself"""
     DISABLED
